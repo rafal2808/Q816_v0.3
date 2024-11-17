@@ -1,0 +1,288 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/ja/Desktop/work/FPGA/projekty/ALU/pa.fromHdl.tcl
+# create_project -name ALU -dir "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_1" -part xc3s1600efg484-5
+create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 407.598 ; gain = 64.441
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "przypisanie_pinow.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ALU.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {RAR.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {PC.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {OUT_VGA.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {OUT_REG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Logic.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {IR.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {IN_REG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DB.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CORE_M2.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DCE_Q816.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top DCE_Q816 $srcset
+# add_files [list {przypisanie_pinow.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s1600efg484-5
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1600e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1600e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1600e/fg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1600e/fg484/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-5.lib.
+Parsing UCF File [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P70 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:1]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site NET [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:2]
+CRITICAL WARNING: [Designutils 20-31] Unrecognized symbol " [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:2]
+Finished Parsing UCF File [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5d16dfd0
+open_rtl_design: Time (s): elapsed = 00:00:15 . Memory (MB): peak = 563.176 ; gain = 135.758
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin A8 [get_ports {CPUin[0]}]
+set_property package_pin F7 [get_ports {CPUin[1]}]
+set_property package_pin G8 [get_ports {CPUin[6]}]
+set_property package_pin C8 [get_ports {CPUin[2]}]
+set_property package_pin A7 [get_ports {CPUin[3]}]
+set_property package_pin F8 [get_ports {CPUin[7]}]
+set_property package_pin D8 [get_ports {CPUin[4]}]
+set_property package_pin A6 [get_ports {CPUin[5]}]
+endgroup
+startgroup
+set_property package_pin G15 [get_ports {CPUout[6]}]
+set_property package_pin A14 [get_ports {CPUout[7]}]
+set_property package_pin F15 [get_ports {CPUout[1]}]
+set_property package_pin E14 [get_ports {CPUout[2]}]
+set_property package_pin C14 [get_ports {CPUout[0]}]
+set_property package_pin C15 [get_ports {CPUout[3]}]
+set_property package_pin H15 [get_ports {CPUout[4]}]
+set_property package_pin D14 [get_ports {CPUout[5]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {CPUram_a[0]}]
+set_property package_pin G12 [get_ports {CPUram_a[1]}]
+set_property package_pin E12 [get_ports {CPUram_a[2]}]
+set_property package_pin C12 [get_ports {CPUram_a[3]}]
+set_property package_pin H12 [get_ports {CPUram_a[5]}]
+set_property package_pin H11 [get_ports {CPUram_a[6]}]
+set_property package_pin B12 [get_ports {CPUram_a[4]}]
+set_property package_pin B11 [get_ports {CPUram_a[7]}]
+endgroup
+startgroup
+set_property package_pin D16 [get_ports {CPUram_we[0]}]
+set_property package_pin A16 [get_ports {CPUram_we[2]}]
+set_property package_pin A18 [get_ports {CPUram_we[3]}]
+set_property package_pin A17 [get_ports {CPUram_we[4]}]
+set_property package_pin E16 [get_ports {CPUram_we[1]}]
+set_property package_pin F16 [get_ports {CPUram_we[5]}]
+set_property package_pin C16 [get_ports {CPUram_we[6]}]
+set_property package_pin A19 [get_ports {CPUram_we[7]}]
+endgroup
+startgroup
+set_property package_pin D9 [get_ports {CPUram_wy[7]}]
+set_property package_pin A4 [get_ports {CPUram_wy[1]}]
+set_property package_pin B8 [get_ports {CPUram_wy[2]}]
+set_property package_pin B9 [get_ports {CPUram_wy[0]}]
+set_property package_pin C7 [get_ports {CPUram_wy[3]}]
+set_property package_pin C6 [get_ports {CPUram_wy[5]}]
+set_property package_pin E9 [get_ports {CPUram_wy[6]}]
+set_property package_pin A5 [get_ports {CPUram_wy[4]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {CPUrom_db[5]}]
+set_property package_pin A9 [get_ports {CPUrom_db[6]}]
+set_property package_pin J11 [get_ports {CPUrom_db[7]}]
+set_property package_pin D11 [get_ports {CPUrom_db[0]}]
+set_property package_pin C11 [get_ports {CPUrom_db[1]}]
+set_property package_pin E11 [get_ports {CPUrom_db[2]}]
+set_property package_pin A13 [get_ports {CPUrom_db[3]}]
+set_property package_pin F10 [get_ports {CPUrom_db[4]}]
+endgroup
+startgroup
+set_property package_pin G14 [get_ports {CPUrom_a[3]}]
+set_property package_pin A10 [get_ports {CPUrom_a[1]}]
+set_property package_pin C19 [get_ports {CPUrom_a[15]}]
+set_property package_pin A20 [get_ports {CPUrom_a[14]}]
+set_property package_pin H14 [get_ports {CPUrom_a[12]}]
+set_property package_pin F13 [get_ports {CPUrom_a[10]}]
+set_property package_pin B13 [get_ports {CPUrom_a[8]}]
+set_property package_pin C18 [get_ports {CPUrom_a[6]}]
+set_property package_pin B15 [get_ports {CPUrom_a[4]}]
+set_property package_pin A21 [get_ports {CPUrom_a[2]}]
+set_property package_pin A15 [get_ports {CPUrom_a[0]}]
+set_property package_pin H13 [get_ports {CPUrom_a[13]}]
+set_property package_pin G13 [get_ports {CPUrom_a[11]}]
+set_property package_pin H10 [get_ports {CPUrom_a[9]}]
+set_property package_pin D10 [get_ports {CPUrom_a[7]}]
+set_property package_pin J13 [get_ports {CPUrom_a[5]}]
+endgroup
+startgroup
+set_property package_pin J8 [get_ports {CPUrom_db[5]}]
+set_property package_pin K8 [get_ports {CPUrom_db[6]}]
+set_property package_pin J5 [get_ports {CPUrom_db[7]}]
+set_property package_pin J3 [get_ports {CPUrom_db[0]}]
+set_property package_pin J6 [get_ports {CPUrom_db[1]}]
+set_property package_pin K3 [get_ports {CPUrom_db[2]}]
+set_property package_pin J7 [get_ports {CPUrom_db[3]}]
+set_property package_pin K6 [get_ports {CPUrom_db[4]}]
+endgroup
+startgroup
+set_property package_pin R7 [get_ports {CPUrom_ir[4]}]
+set_property package_pin P2 [get_ports {CPUrom_ir[0]}]
+set_property package_pin P1 [get_ports {CPUrom_ir[2]}]
+set_property package_pin P3 [get_ports {CPUrom_ir[3]}]
+set_property package_pin P7 [get_ports {CPUrom_ir[1]}]
+endgroup
+startgroup
+set_property package_pin D3 [get_ports {CPUvga[6]}]
+set_property package_pin D1 [get_ports {CPUvga[3]}]
+set_property package_pin C2 [get_ports {CPUvga[4]}]
+set_property package_pin E4 [get_ports {CPUvga[5]}]
+set_property package_pin E3 [get_ports {CPUvga[7]}]
+set_property package_pin E1 [get_ports {CPUvga[1]}]
+set_property package_pin F4 [get_ports {CPUvga[2]}]
+set_property package_pin D2 [get_ports {CPUvga[0]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin A20 [get_ports {CPUrom_a[14]}]
+set_property package_pin A19 [get_ports {CPUram_we[7]}]
+set_property package_pin H11 [get_ports {CPUram_a[6]}]
+set_property package_pin G15 [get_ports {CPUout[6]}]
+set_property package_pin D8 [get_ports {CPUin[4]}]
+set_property package_pin C11 [get_ports {CPUram_we[1]}]
+set_property package_pin D15 [get_ports {CPUram_wy[5]}]
+set_property package_pin H9 [get_ports CPUram_clk]
+set_property package_pin B4 [get_ports {CPUrom_db[3]}]
+set_property package_pin F9 [get_ports {CPUrom_ir[1]}]
+set_property package_pin A6 [get_ports {CPUin[5]}]
+set_property package_pin B13 [get_ports {CPUrom_a[8]}]
+set_property package_pin D7 [get_ports {CPUvga[1]}]
+set_property package_pin C5 [get_ports {CPUvga[3]}]
+set_property package_pin F12 [get_ports {CPUram_a[0]}]
+set_property package_pin B12 [get_ports {CPUram_a[4]}]
+set_property package_pin D18 [get_ports {CPUram_wy[6]}]
+set_property package_pin D6 [get_ports CPUram_e]
+set_property package_pin F11 [get_ports {CPUrom_db[4]}]
+set_property package_pin E6 [get_ports {CPUrom_ir[3]}]
+set_property package_pin C10 [get_ports {CPUvga[6]}]
+set_property package_pin A21 [get_ports {CPUrom_a[2]}]
+set_property package_pin E11 [get_ports {CPUvga[2]}]
+set_property package_pin H8 [get_ports {CPUvga[4]}]
+set_property package_pin C19 [get_ports {CPUrom_a[15]}]
+set_property package_pin A9 [get_ports {CPUout[7]}]
+set_property package_pin B11 [get_ports {CPUram_a[7]}]
+set_property package_pin A5 [get_ports {CPUram_wy[4]}]
+set_property package_pin C9 [get_ports {CPUrom_db[5]}]
+set_property package_pin G14 [get_ports {CPUrom_a[3]}]
+set_property package_pin F13 [get_ports {CPUrom_a[10]}]
+set_property package_pin D13 [get_ports {CPUram_wy[0]}]
+set_property package_pin G12 [get_ports {CPUram_a[1]}]
+set_property package_pin D5 [get_ports {CPUvga[5]}]
+set_property package_pin A8 [get_ports {CPUin[0]}]
+set_property package_pin A12 [get_ports {CPUram_wy[7]}]
+set_property package_pin E7 [get_ports {CPUvga[0]}]
+set_property package_pin B17 [get_ports {CPUrom_ir[2]}]
+set_property package_pin B3 [get_ports {CPUrom_db[6]}]
+set_property package_pin B15 [get_ports {CPUrom_a[4]}]
+set_property package_pin G13 [get_ports {CPUrom_a[11]}]
+set_property package_pin A17 [get_ports {CPUram_we[4]}]
+set_property package_pin G8 [get_ports {CPUin[6]}]
+set_property package_pin E12 [get_ports {CPUram_a[2]}]
+set_property package_pin C15 [get_ports {CPUout[3]}]
+set_property package_pin B6 [get_ports {CPUvga[7]}]
+set_property package_pin F7 [get_ports {CPUin[1]}]
+set_property package_pin D16 [get_ports {CPUram_we[0]}]
+set_property package_pin A4 [get_ports {CPUram_wy[1]}]
+set_property package_pin A13 [get_ports CPUclk]
+set_property package_pin A2 [get_ports {CPUrom_db[0]}]
+set_property package_pin A15 [get_ports {CPUrom_a[0]}]
+set_property package_pin J13 [get_ports {CPUrom_a[5]}]
+set_property package_pin H14 [get_ports {CPUrom_a[12]}]
+set_property package_pin F15 [get_ports {CPUout[1]}]
+set_property package_pin F16 [get_ports {CPUram_we[5]}]
+set_property package_pin C12 [get_ports {CPUram_a[3]}]
+set_property package_pin H15 [get_ports {CPUout[4]}]
+set_property package_pin C14 [get_ports {CPUout[0]}]
+set_property package_pin C17 [get_ports {CPUin[2]}]
+set_property package_pin A16 [get_ports {CPUram_we[2]}]
+set_property package_pin E15 [get_ports {CPUram_wy[2]}]
+set_property package_pin C13 [get_ports {CPUrom_db[1]}]
+set_property package_pin A10 [get_ports {CPUrom_a[1]}]
+set_property package_pin F10 [get_ports {CPUrom_db[7]}]
+set_property package_pin J11 [get_ports {CPUrom_a[6]}]
+set_property package_pin H13 [get_ports {CPUrom_a[13]}]
+set_property package_pin C16 [get_ports {CPUram_we[6]}]
+set_property package_pin E14 [get_ports {CPUout[2]}]
+set_property package_pin D11 [get_ports {CPUram_a[5]}]
+set_property package_pin F8 [get_ports {CPUin[7]}]
+set_property package_pin D14 [get_ports {CPUout[5]}]
+set_property package_pin D17 [get_ports {CPUin[3]}]
+set_property package_pin A18 [get_ports {CPUram_we[3]}]
+set_property package_pin B19 [get_ports CPUreset]
+set_property package_pin C7 [get_ports {CPUram_wy[3]}]
+set_property package_pin G9 [get_ports {CPUrom_db[2]}]
+set_property package_pin A3 [get_ports {CPUrom_ir[4]}]
+set_property package_pin G10 [get_ports {CPUrom_ir[0]}]
+set_property package_pin D10 [get_ports {CPUrom_a[7]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Jan 21 11:56:11 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

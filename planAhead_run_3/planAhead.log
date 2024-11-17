@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 21 12:14:16 2019
+# Process ID: 7656
+# Log file: C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/ja/Desktop/work/FPGA/projekty/ALU/pa.fromHdl.tcl
+# create_project -name ALU -dir "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_3" -part xc3s50atq144-5
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "przypisanie_pinow.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ALU.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {RAR.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {PC.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {OUT_VGA.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {OUT_REG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {MUX.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Logic.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {IR.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {IN_REG.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DB.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {CORE_M2.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DCE_Q816.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top DCE_Q816 $srcset
+# add_files [list {przypisanie_pinow.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s50atq144-5
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s50a/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s50a/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s50a/tq144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s50a/tq144/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-5.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-5.lib.
+Parsing UCF File [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V11 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:4]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P2 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:5]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site K7 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:6]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site H2 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:7]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E4 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:8]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N5 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:9]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U1 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:10]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E11 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:11]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AA17 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:12]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AA6 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:13]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E1 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:14]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R9 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:15]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N16 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:16]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M22 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:17]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L1 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:18]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L5 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:19]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V1 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:20]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site J11 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:21]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AB19 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:22]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AB5 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:23]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M15 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:24]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site Y9 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:25]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M16 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:26]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N17 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:27]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R11 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:28]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site J1 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:29]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L7 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:30]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T3 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:31]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site W17 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:32]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AB10 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:33]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T9 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:34]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T5 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:35]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site K8 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:36]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N20 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:37]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E3 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:38]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T4 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:39]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N22 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:40]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site W7 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:41]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site Y16 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:42]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R10 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:43]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AB9 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:44]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site F4 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:46]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site K4 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:47]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site J6 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:48]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M20 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:49]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site F2 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:50]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N8 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:51]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T7 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:52]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site B11 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:53]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site AB18 [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf:54]
+INFO: [Common 17-14] Message 'Designutils 20-30' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [C:/Users/ja/Desktop/work/FPGA/projekty/ALU/przypisanie_pinow.ucf]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5d16dfd0
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 551.805 ; gain = 116.969
+update_compile_order -fileset sim_1

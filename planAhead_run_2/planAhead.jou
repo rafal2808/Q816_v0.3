@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 21 12:06:13 2019
+# Process ID: 2832
+# Log file: C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/ja/Desktop/work/FPGA/projekty/ALU/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/ja/Desktop/work/FPGA/projekty/ALU/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin F4 [get_ports {CPUin[6]}]
+set_property package_pin E3 [get_ports {CPUin[0]}]
+set_property package_pin F2 [get_ports {CPUin[1]}]
+set_property package_pin G5 [get_ports {CPUin[2]}]
+set_property package_pin D1 [get_ports {CPUin[3]}]
+set_property package_pin F3 [get_ports {CPUin[7]}]
+set_property package_pin E4 [get_ports {CPUin[4]}]
+set_property package_pin E1 [get_ports {CPUin[5]}]
+endgroup
+startgroup
+set_property package_pin H1 [get_ports {CPUout[4]}]
+set_property package_pin H4 [get_ports {CPUout[5]}]
+set_property package_pin H2 [get_ports {CPUout[6]}]
+set_property package_pin J1 [get_ports {CPUout[7]}]
+set_property package_pin G7 [get_ports {CPUout[2]}]
+set_property package_pin J6 [get_ports {CPUout[3]}]
+set_property package_pin H3 [get_ports {CPUout[0]}]
+set_property package_pin H5 [get_ports {CPUout[1]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {CPUram_a[0]}]
+set_property package_pin K8 [get_ports {CPUram_a[1]}]
+set_property package_pin K4 [get_ports {CPUram_a[2]}]
+set_property package_pin K5 [get_ports {CPUram_a[3]}]
+set_property package_pin L5 [get_ports {CPUram_a[4]}]
+set_property package_pin K7 [get_ports {CPUram_a[6]}]
+set_property package_pin K1 [get_ports {CPUram_a[5]}]
+set_property package_pin L7 [get_ports {CPUram_a[7]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {CPUram_we[6]}]
+set_property package_pin P2 [get_ports {CPUram_we[7]}]
+set_property package_pin N8 [get_ports {CPUram_we[0]}]
+set_property package_pin N5 [get_ports {CPUram_we[1]}]
+set_property package_pin P1 [get_ports {CPUram_we[3]}]
+set_property package_pin P6 [get_ports {CPUram_we[4]}]
+set_property package_pin R7 [get_ports {CPUram_we[5]}]
+set_property package_pin N4 [get_ports {CPUram_we[2]}]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports {CPUram_wy[6]}]
+set_property package_pin U1 [get_ports {CPUram_wy[5]}]
+set_property package_pin T4 [get_ports {CPUram_wy[7]}]
+set_property package_pin U4 [get_ports {CPUram_wy[2]}]
+set_property package_pin T5 [get_ports {CPUram_wy[0]}]
+set_property package_pin W1 [get_ports {CPUram_wy[3]}]
+set_property package_pin T7 [get_ports {CPUram_wy[1]}]
+set_property package_pin T3 [get_ports {CPUram_wy[4]}]
+endgroup
+startgroup
+set_property package_pin V11 [get_ports {CPUrom_a[14]}]
+set_property package_pin W9 [get_ports {CPUrom_a[12]}]
+set_property package_pin T9 [get_ports {CPUrom_a[10]}]
+set_property package_pin R9 [get_ports {CPUrom_a[8]}]
+set_property package_pin AB11 [get_ports {CPUrom_a[6]}]
+set_property package_pin R10 [get_ports {CPUrom_a[4]}]
+set_property package_pin Y9 [get_ports {CPUrom_a[2]}]
+set_property package_pin T11 [get_ports {CPUrom_a[13]}]
+set_property package_pin AB9 [get_ports {CPUrom_a[11]}]
+set_property package_pin P10 [get_ports {CPUrom_a[9]}]
+set_property package_pin U11 [get_ports {CPUrom_a[7]}]
+set_property package_pin AA10 [get_ports {CPUrom_a[5]}]
+set_property package_pin AB10 [get_ports {CPUrom_a[3]}]
+set_property package_pin T10 [get_ports {CPUrom_a[0]}]
+set_property package_pin U10 [get_ports {CPUrom_a[1]}]
+set_property package_pin R11 [get_ports {CPUrom_a[15]}]
+endgroup
+startgroup
+set_property package_pin AA17 [get_ports {CPUrom_db[3]}]
+set_property package_pin AB19 [get_ports {CPUrom_db[4]}]
+set_property package_pin W17 [get_ports {CPUrom_db[5]}]
+set_property package_pin Y16 [get_ports {CPUrom_db[6]}]
+set_property package_pin W16 [get_ports {CPUrom_db[7]}]
+set_property package_pin AB18 [get_ports {CPUrom_db[0]}]
+set_property package_pin Y17 [get_ports {CPUrom_db[1]}]
+set_property package_pin AB17 [get_ports {CPUrom_db[2]}]
+endgroup
+startgroup
+set_property package_pin Y6 [get_ports {CPUrom_ir[0]}]
+set_property package_pin AB5 [get_ports {CPUrom_ir[3]}]
+set_property package_pin W7 [get_ports {CPUrom_ir[2]}]
+set_property package_pin AA6 [get_ports {CPUrom_ir[1]}]
+set_property package_pin Y7 [get_ports {CPUrom_ir[4]}]
+endgroup
+startgroup
+set_property package_pin N22 [get_ports {CPUvga[0]}]
+set_property package_pin N16 [get_ports {CPUvga[1]}]
+set_property package_pin N17 [get_ports {CPUvga[4]}]
+set_property package_pin N20 [get_ports {CPUvga[5]}]
+set_property package_pin M20 [get_ports {CPUvga[7]}]
+set_property package_pin M15 [get_ports {CPUvga[6]}]
+set_property package_pin M16 [get_ports {CPUvga[2]}]
+set_property package_pin M22 [get_ports {CPUvga[3]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports CPUreset]
+set_property package_pin J11 [get_ports CPUram_e]
+set_property package_pin F10 [get_ports CPUclk]
+set_property package_pin E11 [get_ports CPUram_clk]
+endgroup
+save_constraints
