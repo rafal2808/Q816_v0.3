@@ -1,0 +1,29 @@
+Command line:
+   DCE_Q816_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60522
+
+Mon Jan 21 17:29:57 2019
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 667.173 Meg
+
+ Total Signals          : 107
+ Total Nets             : 331
+ Total Signal Drivers   : 168
+ Total Blocks           : 17
+ Total Primitive Blocks : 14
+ Total Processes        : 165
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 833
+Total Line Count : 568
+
+ Total Simulation Time: 0.1872 sec
+
+ Current Memory Usage: 981.746 Meg
+
+Mon Jan 21 17:31:26 2019
+
