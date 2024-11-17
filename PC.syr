@@ -1,0 +1,456 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: PC.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PC.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PC"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : PC
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : LUT
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd" in Library work.
+Entity <pc> compiled.
+Entity <pc> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd".
+INFO:Xst:1608 - Relative priorities of control signals on register <Cout_s> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+    Found 16-bit up counter for signal <Cout_s>.
+    Found 16-bit register for signal <PC_REG>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PC> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PC, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PC.ngr
+Top Level Output File Name         : PC
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 98
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 1
+#      LUT3                        : 32
+#      LUT4                        : 16
+#      MUXCY                       : 15
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 32
+#      FDC                         : 16
+#      FDCP                        : 16
+# Clock Buffers                    : 3
+#      BUFGP                       : 3
+# IO Buffers                       : 36
+#      IBUF                        : 20
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       36  out of    704     5%  
+ Number of Slice Flip Flops:             16  out of   1408     1%  
+ Number of 4 input LUTs:                 65  out of   1408     4%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    108    36%  
+    IOB Flip Flops:                      16
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+PC_REG_Hclk                        | BUFGP                  | 8     |
+PC_REG_Lclk                        | BUFGP                  | 8     |
+Cclk                               | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+------------------------+-------+
+Control Signal                           | Buffer(FF name)        | Load  |
+-----------------------------------------+------------------------+-------+
+PC_REG_Hclr                              | IBUF                   | 8     |
+PC_REG_Lclr                              | IBUF                   | 8     |
+Cout_s_0__and0000(Cout_s_0__and00001:O)  | NONE(Cout_s_0)         | 1     |
+Cout_s_0__or0000(Cout_s_0__or00001:O)    | NONE(Cout_s_0)         | 1     |
+Cout_s_10__and0000(Cout_s_10__and00001:O)| NONE(Cout_s_10)        | 1     |
+Cout_s_10__or0000(Cout_s_10__or00001:O)  | NONE(Cout_s_10)        | 1     |
+Cout_s_11__and0000(Cout_s_11__and00001:O)| NONE(Cout_s_11)        | 1     |
+Cout_s_11__or0000(Cout_s_11__or00001:O)  | NONE(Cout_s_11)        | 1     |
+Cout_s_12__and0000(Cout_s_12__and00001:O)| NONE(Cout_s_12)        | 1     |
+Cout_s_12__or0000(Cout_s_12__or00001:O)  | NONE(Cout_s_12)        | 1     |
+Cout_s_13__and0000(Cout_s_13__and00001:O)| NONE(Cout_s_13)        | 1     |
+Cout_s_13__or0000(Cout_s_13__or00001:O)  | NONE(Cout_s_13)        | 1     |
+Cout_s_14__and0000(Cout_s_14__and00001:O)| NONE(Cout_s_14)        | 1     |
+Cout_s_14__or0000(Cout_s_14__or00001:O)  | NONE(Cout_s_14)        | 1     |
+Cout_s_15__and0000(Cout_s_15__and00001:O)| NONE(Cout_s_15)        | 1     |
+Cout_s_15__or0000(Cout_s_15__or00001:O)  | NONE(Cout_s_15)        | 1     |
+Cout_s_1__and0000(Cout_s_1__and00001:O)  | NONE(Cout_s_1)         | 1     |
+Cout_s_1__or0000(Cout_s_1__or00001:O)    | NONE(Cout_s_1)         | 1     |
+Cout_s_2__and0000(Cout_s_2__and00001:O)  | NONE(Cout_s_2)         | 1     |
+Cout_s_2__or0000(Cout_s_2__or00001:O)    | NONE(Cout_s_2)         | 1     |
+Cout_s_3__and0000(Cout_s_3__and00001:O)  | NONE(Cout_s_3)         | 1     |
+Cout_s_3__or0000(Cout_s_3__or00001:O)    | NONE(Cout_s_3)         | 1     |
+Cout_s_4__and0000(Cout_s_4__and00001:O)  | NONE(Cout_s_4)         | 1     |
+Cout_s_4__or0000(Cout_s_4__or00001:O)    | NONE(Cout_s_4)         | 1     |
+Cout_s_5__and0000(Cout_s_5__and00001:O)  | NONE(Cout_s_5)         | 1     |
+Cout_s_5__or0000(Cout_s_5__or00001:O)    | NONE(Cout_s_5)         | 1     |
+Cout_s_6__and0000(Cout_s_6__and00001:O)  | NONE(Cout_s_6)         | 1     |
+Cout_s_6__or0000(Cout_s_6__or00001:O)    | NONE(Cout_s_6)         | 1     |
+Cout_s_7__and0000(Cout_s_7__and00001:O)  | NONE(Cout_s_7)         | 1     |
+Cout_s_7__or0000(Cout_s_7__or00001:O)    | NONE(Cout_s_7)         | 1     |
+Cout_s_8__and0000(Cout_s_8__and00001:O)  | NONE(Cout_s_8)         | 1     |
+Cout_s_8__or0000(Cout_s_8__or00001:O)    | NONE(Cout_s_8)         | 1     |
+Cout_s_9__and0000(Cout_s_9__and00001:O)  | NONE(Cout_s_9)         | 1     |
+Cout_s_9__or0000(Cout_s_9__or00001:O)    | NONE(Cout_s_9)         | 1     |
+-----------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.683ns (Maximum Frequency: 213.541MHz)
+   Minimum input arrival time before clock: 4.228ns
+   Maximum output required time after clock: 5.271ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Cclk'
+  Clock period: 4.683ns (frequency: 213.541MHz)
+  Total number of paths / destination ports: 136 / 16
+-------------------------------------------------------------------------
+Delay:               4.683ns (Levels of Logic = 17)
+  Source:            Cout_s_1 (FF)
+  Destination:       Cout_s_15 (FF)
+  Source Clock:      Cclk rising
+  Destination Clock: Cclk rising
+
+  Data Path: Cout_s_1 to Cout_s_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             2   0.495   0.488  Cout_s_1 (Cout_s_1)
+     LUT1:I0->O            1   0.561   0.000  Cout_s_Madd__add0000_cy<1>_rt (Cout_s_Madd__add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.523   0.000  Cout_s_Madd__add0000_cy<1> (Cout_s_Madd__add0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<2> (Cout_s_Madd__add0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<3> (Cout_s_Madd__add0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<4> (Cout_s_Madd__add0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<5> (Cout_s_Madd__add0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<6> (Cout_s_Madd__add0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<7> (Cout_s_Madd__add0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<8> (Cout_s_Madd__add0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<9> (Cout_s_Madd__add0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<10> (Cout_s_Madd__add0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<11> (Cout_s_Madd__add0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<12> (Cout_s_Madd__add0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Cout_s_Madd__add0000_cy<13> (Cout_s_Madd__add0000_cy<13>)
+     MUXCY:CI->O           0   0.065   0.000  Cout_s_Madd__add0000_cy<14> (Cout_s_Madd__add0000_cy<14>)
+     XORCY:CI->O           1   0.654   0.359  Cout_s_Madd__add0000_xor<15> (Cout_s__add0000<15>)
+     LUT4:I3->O            1   0.561   0.000  Cout_s_Q_mux0000<15>1 (Cout_s_Q_mux0000<15>)
+     FDCP:D                    0.197          Cout_s_15
+    ----------------------------------------
+    Total                      4.683ns (3.836ns logic, 0.847ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PC_REG_Hclk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.378ns (Levels of Logic = 1)
+  Source:            PC_REG_H<6> (PAD)
+  Destination:       PC_REG_14 (FF)
+  Destination Clock: PC_REG_Hclk rising
+
+  Data Path: PC_REG_H<6> to PC_REG_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.824   0.357  PC_REG_H_6_IBUF (PC_REG_H_6_IBUF)
+     FDC:D                     0.197          PC_REG_14
+    ----------------------------------------
+    Total                      1.378ns (1.021ns logic, 0.357ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PC_REG_Lclk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.378ns (Levels of Logic = 1)
+  Source:            PC_REG_L<0> (PAD)
+  Destination:       PC_REG_0 (FF)
+  Destination Clock: PC_REG_Lclk rising
+
+  Data Path: PC_REG_L<0> to PC_REG_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.824   0.357  PC_REG_L_0_IBUF (PC_REG_L_0_IBUF)
+     FDC:D                     0.197          PC_REG_0
+    ----------------------------------------
+    Total                      1.378ns (1.021ns logic, 0.357ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Cclk'
+  Total number of paths / destination ports: 45 / 16
+-------------------------------------------------------------------------
+Offset:              4.228ns (Levels of Logic = 3)
+  Source:            Cclr (PAD)
+  Destination:       Cout_s_15 (FF)
+  Destination Clock: Cclk rising
+
+  Data Path: Cclr to Cout_s_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.824   1.182  Cclr_IBUF (Cclr_IBUF)
+     LUT2:I0->O           13   0.561   0.902  Cout_s_Q_mux0000<0>11 (N01)
+     LUT4:I1->O            1   0.562   0.000  Cout_s_Q_mux0000<3>1 (Cout_s_Q_mux0000<3>)
+     FDCP:D                    0.197          Cout_s_3
+    ----------------------------------------
+    Total                      4.228ns (2.144ns logic, 2.084ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Cclk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              5.271ns (Levels of Logic = 1)
+  Source:            Cout_s_15 (FF)
+  Destination:       PCout<15> (PAD)
+  Source Clock:      Cclk rising
+
+  Data Path: Cout_s_15 to PCout<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             2   0.495   0.380  Cout_s_15 (Cout_s_15)
+     OBUF:I->O                 4.396          PCout_15_OBUF (PCout<15>)
+    ----------------------------------------
+    Total                      5.271ns (4.891ns logic, 0.380ns route)
+                                       (92.8% logic, 7.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.81 secs
+ 
+--> 
+
+Total memory usage is 257328 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
