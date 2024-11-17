@@ -1,0 +1,31 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\ja\Desktop\work\FPGA\projekty\ALU
+#Date/Time:
+#:T   Tue Jan 22 15:15:03 2019
+#------------------------------
+	#Reading DCE_Q816_map.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "DCE_Q816" is an NCD, version 3.2, device xc3s500e, package pq208, speed -5
+	#Design creation date: 2019.01.22.13.48.56
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'CPUram_wy<7>'
+	#comp "CPUram_wy<7>",  site "P133",  bonded type = IBUF,  pad name = PAD86,  pin name = P133  (RPM grid X143Y49)
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+unselect -all
+	#7
+select comp 'CPUram_we<0>'
+	#comp "CPUram_we<0>",  site "P160",  bonded type = IOB,  pad name = PAD57,  pin name = P160  (RPM grid X135Y94)

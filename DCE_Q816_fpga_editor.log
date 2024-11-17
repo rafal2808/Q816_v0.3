@@ -1,0 +1,80 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\ja\Desktop\work\FPGA\projekty\ALU
+#Date/Time:
+#:T   Tue Jan 22 15:17:05 2019
+#------------------------------
+	#Reading DCE_Q816.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "DCE_Q816" is an NCD, version 3.2, device xc3s500e, package pq208, speed -5
+	#Design creation date: 2019.01.22.13.48.56
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select comp 'U1/U1/UW<1>'
+	#comp "U1/U1/UW<1>",  site "SLICE_X36Y38",  type = SLICEL  (RPM grid X77Y40)
+	#4
+unselect -all
+	#5
+select site 'SLICE_X37Y40'
+	#site "SLICE_X37Y40",  type = SLICEL  (RPM grid X79Y42)
+	#6
+unselect -all
+	#7
+select comp 'U5/LOGICout_7_and000023'
+	#comp "U5/LOGICout_7_and000023",  site "SLICE_X26Y45",  type = SLICEL  (RPM grid X57Y47)
+	#8
+unselect -all
+	#9
+select comp 'S2<7>'
+	#comp "S2<7>",  site "SLICE_X26Y44",  type = SLICEL  (RPM grid X57Y46)
+	#10
+unselect -all
+	#11
+select net 'S2<19>1'
+	#net "S2<19>1"
+	#12
+unselect -all
+	#13
+unselect -all
+	#14
+unselect -all
+	#15
+select net 'CPUclk_BUFGP'
+	#net "CPUclk_BUFGP"
+	#16
+unselect -all
+	#17
+select pin 'P184.O1'
+	#site.pin = P184.O1
+	#18
+unselect -all
+	#19
+select comp 'CPUclk'
+	#comp "CPUclk",  site "P184",  bonded type = IBUF,  pad name = IPAD28,  pin name = P184  (RPM grid X71Y95)
+	#20
+unselect -all
+	#21
+unselect -all
+	#22
+select net 'S2<19>1'
+	#net "S2<19>1"
+	#23
+unselect -all
+	#24
+select net 'CPUclk_BUFGP/IBUFG'
+	#net "CPUclk_BUFGP/IBUFG"
+	#25
+unselect -all
+	#26
+select net 'CPUclk_BUFGP'
+	#net "CPUclk_BUFGP"
+	#27
+unselect -all

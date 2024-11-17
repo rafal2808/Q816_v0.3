@@ -1,0 +1,44 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test_isim_beh.exe -prj C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test_beh.prj work.DCE_Q816_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/RAR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/PC.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IR.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/IN_REG.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DB.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/CORE_M2.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816.vhd" into library work
+Parsing VHDL file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity CORE_M2 [core_m2_default]
+Compiling architecture behavioral of entity DB [db_default]
+Compiling architecture behavioral of entity IN_REG [in_reg_default]
+Compiling architecture behavioral of entity IR [ir_default]
+Compiling architecture structural of entity Logic [logic_default]
+Compiling architecture behavioral of entity MUX [mux_default]
+Compiling architecture behavioral of entity OUT_REG [out_reg_default]
+Compiling architecture behavioral of entity OUT_VGA [out_vga_default]
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity RAR [rar_default]
+Compiling architecture behavioral of entity DCE_Q816 [dce_q816_default]
+Compiling architecture behavior of entity dce_q816_test
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Built simulation executable C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test_isim_beh.exe
+Fuse Memory Usage: 37196 KB
+Fuse CPU Usage: 888 ms

@@ -1,0 +1,262 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'DCE_Q816'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s50a-tq144-5 -cm area -ir off -pr off
+-c 100 -o DCE_Q816_map.ncd DCE_Q816.ngd DCE_Q816.pcf 
+Target Device  : xc3s50a
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Sun Feb 10 09:56:53 2019
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   11
+Logic Utilization:
+  Number of Slice Flip Flops:            73 out of   1,408    5%
+  Number of 4 input LUTs:               166 out of   1,408   11%
+Logic Distribution:
+  Number of occupied Slices:            110 out of     704   15%
+    Number of Slices containing only related logic:     110 out of     110 100%
+    Number of Slices containing unrelated logic:          0 out of     110   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         198 out of   1,408   14%
+    Number used as logic:               166
+    Number used as a route-thru:         32
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 75 out of     108   69%
+    IOB Flip Flops:                      45
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.41
+
+Peak Memory Usage:  276 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<17> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<15> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<19> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<7> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<26> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<6> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<0> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<5> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<12> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<22> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net S2<24> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:159 - Net Timing constraints on signal CPUclk are pushed forward
+   through input buffer.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CPUclk                             | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| CPUin<0>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<1>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<2>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<3>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<4>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<5>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<6>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUin<7>                           | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUout<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<3>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<4>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<5>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<6>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUout<7>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<5>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<6>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_a<7>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUram_clk                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<0>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<1>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<2>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<3>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<4>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<5>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<6>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_we<7>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUram_wy<0>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<1>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<2>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<3>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<4>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<5>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<6>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUram_wy<7>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUreset                           | IBUF             | INPUT     | LVCMOS33             |       |          |         |              | PULLUP   | 0 / 0    |                  |
+| CPUrom_a<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<3>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<4>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<5>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<6>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<7>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<8>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<9>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_a<10>                       | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| CPUrom_db<0>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<1>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<2>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<3>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<4>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<5>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<6>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_db<7>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_ir<0>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_ir<1>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_ir<2>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_ir<3>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUrom_ir<4>                       | IBUF             | INPUT     | LVCMOS33             |       |          |         | IFF1         | PULLUP   | 0 / 5    |                  |
+| CPUvga<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<3>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<4>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<5>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<6>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| CPUvga<7>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
