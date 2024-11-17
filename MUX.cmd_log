@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.xst" -ofn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.syr" 
+xst -intstyle ise -ifn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.xst" -ofn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.syr" 
+xst -intstyle ise -ifn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.xst" -ofn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.syr" 
+xst -intstyle ise -ifn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.xst" -ofn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/MUX.syr" 

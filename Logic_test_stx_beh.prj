@@ -1,0 +1,2 @@
+vhdl isim_temp "Logic.vhd"
+vhdl isim_temp "Logic_test.vhd"

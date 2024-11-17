@@ -1,0 +1,357 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Logic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Logic.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Logic"
+Output Format                      : NGC
+Target Device                      : xc3s50a-5-tq144
+
+---- Source Options
+Top Module Name                    : Logic
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : LUT
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd" in Library work.
+Entity <logic> compiled.
+Entity <logic> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Logic> in library <work> (architecture <structural>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Logic> in library <work> (Architecture <structural>).
+Entity <Logic> analyzed. Unit <Logic> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Logic>.
+    Related source file is "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/Logic.vhd".
+    Found 2-bit up counter for signal <Lout>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Logic> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Logic> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Logic, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Logic.ngr
+Top Level Output File Name         : Logic
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 41
+
+Cell Usage :
+# BELS                             : 30
+#      INV                         : 1
+#      LUT2                        : 6
+#      LUT3                        : 8
+#      LUT4                        : 14
+#      MUXF5                       : 1
+# FlipFlops/Latches                : 2
+#      FDC                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 10
+#      OBUF                        : 30
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50atq144-5 
+
+ Number of Slices:                       16  out of    704     2%  
+ Number of Slice Flip Flops:              2  out of   1408     0%  
+ Number of 4 input LUTs:                 29  out of   1408     2%  
+ Number of IOs:                          41
+ Number of bonded IOBs:                  41  out of    108    37%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LOGICclk                           | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+LOGICout_13_OBUF(LOGICout<13>1:O)  | NONE(Lout_0)           | 2     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.213ns (Maximum Frequency: 451.916MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 9.026ns
+   Maximum combinational path delay: 9.617ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LOGICclk'
+  Clock period: 2.213ns (frequency: 451.916MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.213ns (Levels of Logic = 1)
+  Source:            Lout_0 (FF)
+  Destination:       Lout_0 (FF)
+  Source Clock:      LOGICclk rising
+  Destination Clock: LOGICclk rising
+
+  Data Path: Lout_0 to Lout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.495   0.602  Lout_0 (Lout_0)
+     INV:I->O              1   0.562   0.357  Mcount_Lout_xor<0>11_INV_0 (Result<0>)
+     FDC:D                     0.197          Lout_0
+    ----------------------------------------
+    Total                      2.213ns (1.254ns logic, 0.959ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LOGICclk'
+  Total number of paths / destination ports: 62 / 28
+-------------------------------------------------------------------------
+Offset:              9.026ns (Levels of Logic = 4)
+  Source:            Lout_0 (FF)
+  Destination:       LOGICout<11> (PAD)
+  Source Clock:      LOGICclk rising
+
+  Data Path: Lout_0 to LOGICout<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.495   0.668  Lout_0 (Lout_0)
+     LUT4:I1->O            3   0.562   0.559  LOGICout_21_and000541 (N8)
+     LUT4:I0->O           15   0.561   0.866  LOGICout<13>1 (LOGICout_13_OBUF)
+     LUT4:I3->O            1   0.561   0.357  LOGICout_11_or0001 (LOGICout_11_OBUF)
+     OBUF:I->O                 4.396          LOGICout_11_OBUF (LOGICout<11>)
+    ----------------------------------------
+    Total                      9.026ns (6.575ns logic, 2.451ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 159 / 26
+-------------------------------------------------------------------------
+Delay:               9.617ns (Levels of Logic = 5)
+  Source:            LOGICin<0> (PAD)
+  Destination:       LOGICout<11> (PAD)
+
+  Data Path: LOGICin<0> to LOGICout<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   0.824   0.972  LOGICin_0_IBUF (LOGICin_0_IBUF)
+     LUT2:I0->O            3   0.561   0.517  LOGICout_7_and000011 (N11)
+     LUT4:I1->O           15   0.562   0.866  LOGICout<13>1 (LOGICout_13_OBUF)
+     LUT4:I3->O            1   0.561   0.357  LOGICout_11_or0001 (LOGICout_11_OBUF)
+     OBUF:I->O                 4.396          LOGICout_11_OBUF (LOGICout<11>)
+    ----------------------------------------
+    Total                      9.617ns (6.904ns logic, 2.713ns route)
+                                       (71.8% logic, 28.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.77 secs
+ 
+--> 
+
+Total memory usage is 257008 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

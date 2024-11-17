@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.xst" -ofn "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/OUT_VGA.syr" 

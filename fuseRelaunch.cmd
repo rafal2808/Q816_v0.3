@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test_isim_beh.exe" -prj "C:/Users/ja/Desktop/work/FPGA/projekty/ALU/DCE_Q816_test_beh.prj" "work.DCE_Q816_test" 
